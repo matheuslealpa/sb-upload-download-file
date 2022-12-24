@@ -1,0 +1,8 @@
+spring:
+  datasource:
+    driverClassName: org.h2.Driver
+    url: jdbc:h2:file:~/sb-upload-download-file
+    username: root
+    password:
+  jpa:
+    spring.jpa.database-platform: org.hibernate.dialect.H2Dialect
