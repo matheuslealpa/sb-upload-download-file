@@ -2,6 +2,7 @@ package com.example.domain.dto;
 
 import lombok.*;
 import org.springframework.web.multipart.MultipartFile;
+import java.util.List;
 
 @Getter
 @Setter
@@ -11,5 +12,5 @@ import org.springframework.web.multipart.MultipartFile;
 public class ClientDTO {
     private Long id;
     private String name;
-    private MultipartFile multipartFile;
+    private List<MultipartFile> multipartFile;
 }
