@@ -20,7 +20,6 @@ import java.util.stream.Collectors;
 public class ClientService {
 
     private final ClientRepository clientRepository;
-    private final FileStorageService fileStorageService;
     private ModelMapper modelMapper;
 
     public Client insert(ClientDTO clientDTO) {
