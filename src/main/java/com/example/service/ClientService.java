@@ -16,10 +16,10 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @Service
-@AllArgsConstructor(onConstructor = @__(@Autowired))
 public class ClientService {
 
-    private final ClientRepository clientRepository;
+    @Autowired
+    private ClientRepository clientRepository;
     private ModelMapper modelMapper;
 
     public Client insert(ClientDTO clientDTO) {

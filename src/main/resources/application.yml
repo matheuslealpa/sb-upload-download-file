@@ -5,8 +5,8 @@ spring:
       max-request-size: 2MB
   datasource:
     driverClassName: org.h2.Driver
-    url: jdbc:h2:file:~/sb-upload-download-file
+    url: jdbc:h2:file:~/sb
     username: root
-    password:
+    password: root
   jpa:
-    spring.jpa.database-platform: org.hibernate.dialect.H2Dialect
+    database-platform: org.hibernate.dialect.H2Dialect
