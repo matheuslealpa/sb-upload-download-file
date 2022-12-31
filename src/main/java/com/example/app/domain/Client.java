@@ -1,5 +1,6 @@
-package com.example.domain;
+package com.example.app.domain;
 
+import com.example.core.AbstractEntity;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -15,14 +16,7 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @Table(name="CLIENT")
-public class Client {
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
+public class Client extends AbstractEntity {
+    private static final long serialVersionUID = 1L;
     private String name;
-
-    @OneToMany
-    @JoinColumn(name = "CLIENT_ID")
-    private List<FileDB> files = new ArrayList<>();
-
 }

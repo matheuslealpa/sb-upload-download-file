@@ -1,6 +1,6 @@
-package com.example.repository;
+package com.example.app.repository;
 
-import com.example.domain.Client;
+import com.example.app.domain.Client;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 import org.springframework.stereotype.Repository;
